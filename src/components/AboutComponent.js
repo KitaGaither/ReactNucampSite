@@ -92,4 +92,5 @@ function RenderPartner({partner}) {
     return <div/>; 
 }
 
+
 export default About;
