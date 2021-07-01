@@ -52,7 +52,7 @@ class Contact extends Component {
                         <address>
                             1 Nucamp Way<br />
                             Seattle, WA 98001<br />
-                            U.S.A.
+                            USA
                         </address>
                     </div>
                     <div className="col">

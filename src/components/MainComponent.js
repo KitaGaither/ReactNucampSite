@@ -6,7 +6,6 @@ import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -25,22 +24,14 @@ class Main extends Component {
     const HomePage = () => {
       return (
           <Home
-              campsite={this.state.campsites.filter(campsite => campsite.featured)[0]}
-              promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
-              partner={this.state.partners.filter(partner => partner.featured)[0]}
+              campsite={this.props.campsites.filter(campsite => campsite.featured)[0]}
+              promotion={this.props.promotions.filter(promotion => promotion.featured)[0]}
+              partner={this.props.partners.filter(partner => partner.featured)[0]}
           />
       );
   };
 
-  const HomePage = () => {
-    return (
-        <Home
-            campsite={this.props.campsites.filter(campsite => campsite.featured)[0]}
-            promotion={this.props.promotions.filter(promotion => promotion.featured)[0]}
-            partner={this.props.partners.filter(partner => partner.featured)[0]}
-        />
-    );
-};
+  
 
 const CampsiteWithId = ({match}) => {
     return (
