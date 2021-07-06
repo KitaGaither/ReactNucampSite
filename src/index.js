@@ -7,6 +7,7 @@ import 'typeface-lobster';
 import 'typeface-open-sans';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './App';
 
 ReactDOM.render(
